@@ -15,6 +15,7 @@ const config: GatsbyConfig = {
       options: {
         accessToken: "AvnqzAFlgxEcRmtckttjGYYeg20gBPngpj88Un-wNY4",
         spaceId: "7bkmtfyy5w8g",
+        downloadLocal: true,
       },
     },
     "gatsby-plugin-image",

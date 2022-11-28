@@ -6,6 +6,9 @@ export const useCompanyMetadata = () => {
       query {
         contentfulCompanyInfo {
           name
+          logo {
+            url
+          }
         }
       }
     `
@@ -13,5 +16,6 @@ export const useCompanyMetadata = () => {
 
   return {
     name: contentfulCompanyInfo.name,
+    imageUrl: contentfulCompanyInfo.logo.url,
   };
 };
