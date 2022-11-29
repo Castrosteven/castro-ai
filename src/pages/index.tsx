@@ -5,23 +5,35 @@ import { useCompanyMetadata } from "../hooks/useCompanyMetadata";
 import { Navbar } from "../components/Navbar";
 import { Layout } from "../components/Layout";
 import "../styles/index.scss";
+import { Hero } from "../components/Hero";
 const IndexPage: React.FC<PageProps> = () => {
   const { contentfulLandingPage } = useStaticQuery(
     graphql`
       query {
         contentfulLandingPage {
-          title
+          heroHeading
+          heroSubTitle
+          heroImage {
+            url
+          }
         }
       }
     `
   );
-  const { title } = contentfulLandingPage;
+  const { heroImage, heroHeading, heroSubTitle } = contentfulLandingPage;
   return (
     <Layout>
-      <main className="container">
-        <div>
-          <p>INSERT LANDING PAGE HERE</p>
-        </div>
+      <main
+        style={{
+          height: "60vh",
+        }}
+        className="container"
+      >
+        <Hero
+          heroHeading={heroHeading}
+          heroSubTitle={heroSubTitle}
+          heroImage={heroImage.url}
+        />
       </main>
     </Layout>
   );

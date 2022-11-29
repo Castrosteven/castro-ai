@@ -1,0 +1,43 @@
+$breakpoint-tablet: 768px;
+.Hero {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column-reverse;
+  }
+}
+.HeroTextBox {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  @media (max-width: $breakpoint-tablet) {
+    align-items: center;
+    justify-content: center;
+  }
+  .HeadingOne {
+    @media (max-width: $breakpoint-tablet) {
+      width: 100%;
+      text-align: center;
+    }
+    width: 75%;
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  .HeadingTwo {
+    @media (max-width: $breakpoint-tablet) {
+      width: 100%;
+    }
+    width: 75%;
+    font-weight: 400;
+    font-size: large;
+  }
+}
+.HeroImage {
+  height: 100%;
+  width: 100%;
+}
