@@ -14,7 +14,12 @@ export const Hero = ({ heroHeading, heroImage, heroSubTitle }: Props) => {
         </div>
         <div className={styles.HeadingTwo}>{heroSubTitle}</div>
       </div>
-      <div>
+      <div
+        style={{
+          height: "auto",
+          overflow: "auto",
+        }}
+      >
         <img className={styles.HeroImage} src={heroImage} alt="" />
       </div>
     </div>
