@@ -1,0 +1,20 @@
+.servicesContainer {
+  background-color: white;
+  height: 50vh;
+}
+.container {
+  max-width: 1720px;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.title {
+  text-align: center;
+  font-size: xx-large;
+}
+.text {
+  text-align: center;
+  line-height: 30px;
+}

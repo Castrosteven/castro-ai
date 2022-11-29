@@ -7,6 +7,7 @@ import { Layout } from "../components/Layout";
 import "../styles/index.scss";
 import { Hero } from "../components/Hero";
 import { EmailForm } from "../components/EmailForm";
+import { Services } from "../components/Services";
 const IndexPage: React.FC<PageProps> = () => {
   const { contentfulLandingPage } = useStaticQuery(
     graphql`
@@ -30,7 +31,6 @@ const IndexPage: React.FC<PageProps> = () => {
         style={{
           height: "60vh",
         }}
-        className="container"
       >
         <Hero
           heroHeading={heroHeading}
@@ -39,6 +39,7 @@ const IndexPage: React.FC<PageProps> = () => {
           heroSubTitle2={heroSubTitle2}
         />
         <EmailForm />
+        <Services />
       </main>
     </Layout>
   );

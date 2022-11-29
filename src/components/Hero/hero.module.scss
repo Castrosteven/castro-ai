@@ -1,12 +1,14 @@
 $breakpoint-tablet: 768px;
 .Hero {
+  max-width: 1720px;
+  margin: auto;
   height: 50vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
   @media (max-width: $breakpoint-tablet) {
     flex-direction: column-reverse;
+    padding: 10px;
   }
 }
 .HeroTextBox {
