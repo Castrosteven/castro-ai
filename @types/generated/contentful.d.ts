@@ -46,6 +46,9 @@ export interface ILandingPageFields {
 
   /** hero image */
   heroImage: Asset;
+
+  /** hero sub title 2 */
+  heroSubTitle2: string;
 }
 
 export interface ILandingPage extends Entry<ILandingPageFields> {

@@ -4,15 +4,21 @@ interface Props {
   heroHeading: string;
   heroSubTitle: string;
   heroImage: string;
+  heroSubTitle2: string;
 }
-export const Hero = ({ heroHeading, heroImage, heroSubTitle }: Props) => {
+export const Hero = ({
+  heroHeading,
+  heroImage,
+  heroSubTitle,
+  heroSubTitle2,
+}: Props) => {
   return (
     <div className={styles.Hero}>
       <div className={styles.HeroTextBox}>
-        <div className={styles.HeadingOne}>
-          <p>{heroHeading}</p>
-        </div>
-        <div className={styles.HeadingTwo}>{heroSubTitle}</div>
+        <p className={styles.HeadingOne}>{heroHeading}</p>
+        <p className={styles.HeadingTwo}>
+          {heroSubTitle} <br /> {heroSubTitle2}
+        </p>
       </div>
       <div
         style={{

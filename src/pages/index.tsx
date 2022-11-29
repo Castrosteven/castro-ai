@@ -13,6 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
         contentfulLandingPage {
           heroHeading
           heroSubTitle
+          heroSubTitle2
           heroImage {
             url
           }
@@ -20,7 +21,8 @@ const IndexPage: React.FC<PageProps> = () => {
       }
     `
   );
-  const { heroImage, heroHeading, heroSubTitle } = contentfulLandingPage;
+  const { heroImage, heroHeading, heroSubTitle, heroSubTitle2 } =
+    contentfulLandingPage;
   return (
     <Layout>
       <main
@@ -33,6 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
           heroHeading={heroHeading}
           heroSubTitle={heroSubTitle}
           heroImage={heroImage.url}
+          heroSubTitle2={heroSubTitle2}
         />
       </main>
     </Layout>
