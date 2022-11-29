@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../Button";
 import * as styles from "./hero.module.scss";
 interface Props {
   heroHeading: string;
@@ -19,6 +20,9 @@ export const Hero = ({
         <p className={styles.HeadingTwo}>
           {heroSubTitle} <br /> {heroSubTitle2}
         </p>
+        <div>
+          <Button>Get in touch</Button>
+        </div>
       </div>
       <div
         style={{
