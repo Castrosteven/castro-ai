@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import React from "react";
 import { Button } from "../Button";
 import * as styles from "./hero.module.scss";
@@ -25,13 +26,11 @@ export const Hero = ({
         </div>
       </div>
       <div
+        className={styles.HeroImage}
         style={{
-          height: "100%",
-          overflow: "auto",
+          backgroundImage: `url(${heroImage})`,
         }}
-      >
-        <img className={styles.HeroImage} src={heroImage} alt="" />
-      </div>
+      />
     </div>
   );
 };

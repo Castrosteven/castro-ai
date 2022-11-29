@@ -6,6 +6,7 @@ import { Navbar } from "../components/Navbar";
 import { Layout } from "../components/Layout";
 import "../styles/index.scss";
 import { Hero } from "../components/Hero";
+import { EmailForm } from "../components/EmailForm";
 const IndexPage: React.FC<PageProps> = () => {
   const { contentfulLandingPage } = useStaticQuery(
     graphql`
@@ -37,6 +38,7 @@ const IndexPage: React.FC<PageProps> = () => {
           heroImage={heroImage.url}
           heroSubTitle2={heroSubTitle2}
         />
+        <EmailForm />
       </main>
     </Layout>
   );

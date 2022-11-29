@@ -1,0 +1,39 @@
+$breakpoint-tablet: 768px;
+
+.form {
+  display: flex;
+  gap: 5px;
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.complete {
+  background-color: #6482c9;
+  height: 100px;
+  color: white;
+  font-size: xx-large;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navContainer {
+  background-color: #6482c9;
+  height: 100px;
+  color: white;
+  display: flex;
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    padding: 100px;
+  }
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  p {
+    font-size: x-large;
+    font-weight: 600;
+  }
+}
