@@ -16,7 +16,7 @@ export const Hero = ({ heroHeading, heroImage, heroSubTitle }: Props) => {
       </div>
       <div
         style={{
-          height: "auto",
+          height: "100%",
           overflow: "auto",
         }}
       >
