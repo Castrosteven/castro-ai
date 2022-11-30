@@ -6,6 +6,7 @@ $breakpoint-tablet: 768px;
   @media (max-width: $breakpoint-tablet) {
     flex-direction: column;
     width: 100%;
+    gap: 20px;
   }
 }
 .complete {
@@ -25,9 +26,10 @@ $breakpoint-tablet: 768px;
   display: flex;
   @media (max-width: $breakpoint-tablet) {
     flex-direction: column;
-    height: 400px;
+    height: 100vh;
     width: 100%;
-    padding: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   justify-content: center;
   align-items: center;

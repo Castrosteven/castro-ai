@@ -17,12 +17,20 @@ export const Hero = ({
   return (
     <div className={styles.Hero}>
       <div className={styles.HeroTextBox}>
-        <p className={styles.HeadingOne}>{heroHeading}</p>
-        <p className={styles.HeadingTwo}>
-          {heroSubTitle} <br /> {heroSubTitle2}
-        </p>
+        <div className={styles.HeadingOne}>{heroHeading}</div>
+        <div className={styles.HeadingTwo}>
+          {heroSubTitle} {heroSubTitle2}
+        </div>
         <div>
-          <Button>Get in touch</Button>
+          <Button>
+            <span
+              style={{
+                fontSize: "20px",
+              }}
+            >
+              Free Consultation
+            </span>
+          </Button>
         </div>
       </div>
       <div
