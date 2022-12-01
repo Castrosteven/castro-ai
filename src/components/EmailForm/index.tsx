@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { Button } from "../Button";
 import { TextInput } from "../TextInput";
@@ -14,12 +15,20 @@ export const EmailForm = () => {
   const submitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      const response = await axios.post("/api/subscribe", {
+        email: form.email,
+        firstName: form.firstName,
+        lastName: form.lastName,
+      });
+      alert(JSON.stringify(response));
       setState("SUBMITTED");
       setForm(initialState);
       setTimeout(() => {
         setState("UNSUBMITTED");
       }, 5000);
-    } catch (error) {}
+    } catch (error) {
+      console.error(error);
+    }
   };
   const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, name } = e.target;
